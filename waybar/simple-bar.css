@@ -1,0 +1,56 @@
+/* Simple bar style */
+
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "JetBrainsMono Nerd Font", "Font Awesome 6 Free";
+    font-size: 10px;
+    min-height: 0;
+}
+window#waybar {
+    background-color: rgba(20, 20, 20, 0.7); /* Hitam pekat transparan */
+    color: #eeeeee;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#workspaces {
+    background: transparent;
+    margin: 2px 2px;
+}
+
+#workspaces button {
+    background-color: black;
+    color: #aaaaaa;
+    border-radius: 4px; /* Sudut sedikit tumpul (kotak) */
+    padding: 2px 10px;
+    margin: 2px;
+    min-width: 10px;
+}
+
+#workspaces button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+#workspaces button.active {
+    background-color: rgba(255, 255, 255, 0.719);
+    color: #11111b;
+    min-width: 10px;
+}
+
+
+#tray {
+    background-color: rgba(255, 255, 255, 0.161);
+    padding: 0px 8px;
+    margin: 3;
+    border-radius: 4px;
+}
+
+#clock,
+#battery,
+#cpu,
+#memory,
+#network,
+#pulseaudio,
+#custom-power {
+    padding: 0px 10px; 
+}

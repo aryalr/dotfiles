@@ -1,0 +1,41 @@
+{
+    // SETUP UTAMA
+    "layer": "top",
+    "position": "bottom",
+    "height": 30,
+    "exclusive": true,
+    "passthrough": false,
+    "reload_style_on_change": true,
+
+    // INCLUDE (Biarkan ini agar icon tetap jalan)
+    "include": [
+        "$XDG_CONFIG_HOME/waybar/includes/includes.json"
+    ],
+
+    // MODUL (Tanpa "group/pill")
+    "modules-left": [
+        "hyprland/workspaces"
+    ],
+    
+    "modules-center": [], // Kosongkan tengah jika ingin mirip referensi
+    
+    "modules-right": [
+        "tray",
+        "pulseaudio",
+        "network",
+        "cpu",
+        "memory",
+        "battery",
+        "clock",
+        "custom/power"
+    ],
+
+    // KONFIGURASI MODUL SPESIFIK (Opsional, agar formatnya rapi)
+    "clock": {
+        "format": "{:%H:%M} "
+    },
+    "hyprland/workspaces": {
+        "format": "{icon}",
+        "on-click": "activate"
+    }
+}
