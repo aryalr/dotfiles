@@ -1,0 +1,36 @@
+{
+  // SETUP UTAMA
+  "layer": "top",
+  "position": "top",
+  "height": 30,
+  "exclusive": true,
+  "passthrough": false,
+  "reload_style_on_change": true,
+
+  // Icon function
+  "include": ["$XDG_CONFIG_HOME/waybar/includes/includes.json"],
+
+  "modules-left": ["hyprland/workspaces"],
+
+  "modules-center": ["clock"],
+
+  "modules-right": [
+    "network#bandwidth",
+    "tray",
+    "pulseaudio",
+    "cpu",
+    "memory",
+    "battery",
+    "custom/power"
+  ],
+
+  // KONFIGURASI MODUL SPESIFIK (Opsional, agar formatnya rapi)
+  "clock": {
+    "format": "{:%A - %H:%M} "
+  },
+
+  "hyprland/workspaces": {
+    "format": "{icon}",
+    "on-click": "activate"
+  }
+}
