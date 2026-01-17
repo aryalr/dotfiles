@@ -17,6 +17,7 @@ Currently, this repository includes configurations for:
 - **🖥️ Hyprland**: Tiling window manager configurations (`hyprland.conf`, keybindings, and window rules).
 - **📝 Neovim**: My text editor configuration based on [LazyVim](https://www.lazyvim.org/).
 - **bar Waybar**: Status bar configuration for the Wayland compositor.
+
 Note: Currently using HYDE for preconfigured other dotfiles. planning to use fully custom dotfiles for everythings!
 
 ## 📂 Structure
